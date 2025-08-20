@@ -1,0 +1,275 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 100px 17px 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 100px 10px 100px;
+}
+
+.navbar-logo a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: #007bff;
+}
+
+.mobile-menu-button {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.mobile-menu-button span {
+  width: 25px;
+  height: 2px;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px 10px;
+  }
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar.mobile-open .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-menu-button {
+    display: flex;
+  }
+
+  .navbar.mobile-open .mobile-menu-button span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .navbar.mobile-open .mobile-menu-button span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar.mobile-open .mobile-menu-button span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+/* From Uiverse.io by gagan-gv */
+.nav-contact-btn {
+  display: block;
+  padding: 7px 10px;
+  background: transparent;
+  outline: none;
+  border: 0;
+  color: #000000;
+  letter-spacing: 0.1em;
+  font-family: monospace;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.cube {
+  position: relative;
+  transition: all 0.5s;
+}
+
+.cube .nav-contact-bg-top {
+  position: absolute;
+  height: 10px;
+  background: #ff8202;
+  bottom: 100%;
+  left: 5px;
+  right: -5px;
+  transform: skew(-45deg, 0);
+  margin: 0;
+  transition: all 0.4s;
+}
+
+.cube .nav-contact-bg-top .nav-contact-bg-inner {
+  bottom: 0;
+}
+
+.cube .nav-contact-bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background: #ff8202;
+  transition: all 0.4s;
+}
+
+.cube .nav-contact-bg-right {
+  position: absolute;
+  background: #ff8202;
+  top: -5px;
+  z-index: 0;
+  bottom: 5px;
+  width: 10px;
+  left: 100%;
+  transform: skew(0, -45deg);
+  transition: all 0.4s;
+}
+
+.cube .nav-contact-bg-right .nav-contact-bg-inner {
+  left: 0;
+}
+
+.cube .nav-contact-bg-inner {
+  background: #ffd2a4;
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  bottom: 2px;
+}
+
+.cube .nav-contact-text {
+  position: relative;
+  transition: all 0.4s;
+}
+
+.cube:hover .nav-contact-bg-inner {
+  background: #ff9831;
+  transition: all 0.4s;
+}
+
+.cube:hover .nav-contact-text {
+  color: #ffffff;
+  transition: all 0.4s;
+}
+
+.cube:hover .nav-contact-bg-right,
+.cube:hover .nav-contact-bg,
+.cube:hover .nav-contact-bg-top {
+  background: #28282d;
+}
+
+.cube:active {
+  z-index: 9999;
+  animation: bounce 0.1s linear;
+}
+
+@keyframes bounce {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+/* wouebfieuw */
+.nav-menu-btn {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.nav-menu-btn {
+  --primary-color: #111;
+  --hovered-color: #ff8a46;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.nav-menu-btn p {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.nav-menu-btn::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.45s ease-out;
+}
+
+.nav-menu-1::before {
+  position: absolute;
+  /*   box-sizing: border-box; */
+  content: "Home";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.6s ease-out;
+}
+.nav-menu-2::before {
+  position: absolute;
+  /*   box-sizing: border-box; */
+  content: "About";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.6s ease-out;
+}
+.nav-menu-3::before {
+  position: absolute;
+  /*   box-sizing: border-box; */
+  content: "Services";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.6s ease-out;
+}
+
+.nav-menu-btn:hover::after {
+  width: 100%;
+}
+
+.nav-menu-btn:hover p::before {
+  width: 100%;
+}
+.nav-menu-btn:hover p {
+  color: var(--hovered-color);
+}
