@@ -1,6 +1,8 @@
 import React from "react";
 import "../pages/home.css";
 
+import ClientsSection from "../components/ClientsSection";
+
 function Home() {
   return (
     <>
@@ -49,6 +51,7 @@ function Home() {
           </div>
         </div>
       </div>
+      <ClientsSection />
     </>
   );
 }
