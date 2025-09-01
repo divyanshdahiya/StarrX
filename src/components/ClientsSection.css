@@ -1,6 +1,6 @@
 .clients-section {
   background: #ffffff;
-  padding: 50px 0 80px 0;
+  padding: 40px 0 50px 0;
   text-align: center;
   margin-top: 10px;
 }
@@ -10,8 +10,20 @@
   font-size: 3rem;
   font-weight: 800;
   letter-spacing: 2px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  display: inline-block;
+  position: relative;
+  color: #ff4444;
   text-transform: uppercase;
+}
+.clients-title::after {
+  content: "";
+  display: block;
+  margin: 12px auto 0 auto;
+  width: 100px;
+  height: 4px;
+  background: #ff4444;
+  border-radius: 2px;
 }
 
 .clients-logos {
