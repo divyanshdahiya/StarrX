@@ -1,9 +1,9 @@
 import React from "react";
 import "../pages/home.css";
-
 import ClientsSection from "../components/ClientsSection";
 import ProductsSection from "../components/ProductsSection";
-import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
     <>
@@ -57,7 +57,18 @@ function Home() {
       </div>
       <ClientsSection />
       <ProductsSection />
-      <Footer />
+      <section className="get-started-section">
+        <div className="get-started-bg">
+          <h1 className="get-started-title">Ready to get Started?</h1>
+          <p className="get-started-desc">
+            Ready to modernize your federation? Get in touch with us to discuss
+            how our platform can streamline your management processes.
+          </p>
+          <Link to="/contact" className="get-started-btn">
+            Request a Call <span className="arrow">→</span>
+          </Link>
+        </div>
+      </section>
     </>
   );
 }

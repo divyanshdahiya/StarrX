@@ -3,18 +3,6 @@ import "./Footer.css";
 
 const Footer = () => (
   <>
-    <section className="get-started-section">
-      <div className="get-started-bg">
-        <h1 className="get-started-title">Ready to get Started?</h1>
-        <p className="get-started-desc">
-          Ready to modernize your federation? Get in touch with us to discuss
-          how our platform can streamline your management processes.
-        </p>
-        <a href="#contact" className="get-started-btn">
-          Request a Call <span className="arrow">→</span>
-        </a>
-      </div>
-    </section>
     <footer className="footer-section">
       <div className="footer-main">
         <div className="footer-brand">
@@ -24,7 +12,7 @@ const Footer = () => (
             seamless management solutions.
           </p>
           <div className="footer-contact">
-            <div>dahiya.divyansh1@gmail.com</div>
+            <div>starrxlabs@gmail.com</div>
             <div>+91-9811400202</div>
           </div>
         </div>

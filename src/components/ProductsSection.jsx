@@ -52,7 +52,9 @@ const products = [
 
 const ProductsSection = () => (
   <section className="products-section">
-    <h1 className="products-title highlight">OUR PRODUCTS</h1>
+    <h1 className="products-title highlight">
+      Our Accomplishment OUR PRODUCTS
+    </h1>
     {products.map((product, idx) => (
       <div className="product-block" key={idx}>
         <div className="product-header">
