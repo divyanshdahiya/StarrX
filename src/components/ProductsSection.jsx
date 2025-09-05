@@ -26,6 +26,29 @@ const products = [
     ],
   },
   {
+    name: "Sports Arena Organizer",
+    description:
+      "A management tool designed for field and arena owners. Simplify scheduling, track attendance and payments, and keep players engaged with live match stats, ratings, and AI-powered team selection. Make running games easier while creating a better experience for every group that rents your field.",
+    image: require("../assets/youthgames.webp"),
+    areas: [
+      {
+        title: "Comprehensive Arena Management",
+        desc: "Fill your fields faster with automated scheduling tools that make it simple for groups to book recurring games and manage attendance.",
+        image: require("../assets/arena-home.png"),
+      },
+      {
+        title: "Player Engagement & Loyalty",
+        desc: "Offer groups live match stats, player ratings, and AI-driven team selection—unique features that keep players coming back to your venue week after week.",
+        image: require("../assets/arena-scoring.png"),
+      },
+      {
+        title: "Integrated Payment System",
+        desc: "Eliminate no-shows and late payments with integrated tracking, making your operations smoother and more reliable.",
+        image: require("../assets/arena-stats.png"),
+      },
+    ],
+  },
+  {
     name: "Live Scoring & Data Analysis",
     description:
       "Real-time match scoring, player stats, and in-depth analytics for teams and tournaments. Instantly visualize performance and trends as the action unfolds.",
@@ -51,10 +74,8 @@ const products = [
 ];
 
 const ProductsSection = () => (
-  <section className="products-section">
-    <h1 className="products-title highlight">
-      Our Accomplishment OUR PRODUCTS
-    </h1>
+  <section className="products-section" id="products">
+    <h1 className="products-title highlight">OUR PRODUCTS</h1>
     {products.map((product, idx) => (
       <div className="product-block" key={idx}>
         <div className="product-header">

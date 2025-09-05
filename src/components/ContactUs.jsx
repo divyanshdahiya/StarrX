@@ -65,21 +65,21 @@ const ContactUs = () => {
           <div className="contact-info">
             <h3>Get In Touch</h3>
             <div className="info-item">
-              <h4>📧 Email</h4>
+              <h4>✉️ Email</h4>
               <p>starrxlabs@gmail.com</p>
             </div>
             <div className="info-item">
-              <h4>📞 Phone</h4>
-              <p>+91 - 9811400202</p>
+              <h4>📱 Phone</h4>
+              <p>+91 98114 00202</p>
             </div>
             <div className="info-item">
-              <h4>🕒 Business Hours</h4>
+              <h4>⏰ Business Hours</h4>
               <p>
-                Monday - Friday: 9:00 AM - 6:00 PM
+                Mon - Fri: 9:00 AM - 6:00 PM
                 <br />
-                Saturday: 10:00 AM - 4:00 PM
+                Sat: 10:00 AM - 4:00 PM
                 <br />
-                Sunday: Closed
+                Sun: Closed
               </p>
             </div>
           </div>
@@ -95,7 +95,7 @@ const ContactUs = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  placeholder="Enter your full name"
+                  placeholder="Your Full Name"
                 />
               </div>
 
@@ -108,7 +108,7 @@ const ContactUs = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  placeholder="Enter your email address"
+                  placeholder="john@example.com"
                 />
               </div>
 
@@ -120,7 +120,7 @@ const ContactUs = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  placeholder="Enter your phone number"
+                  placeholder="+91 98xxxxxxx90"
                 />
               </div>
 
@@ -133,11 +133,11 @@ const ContactUs = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  placeholder="What is this regarding?"
+                  placeholder="Project inquiry"
                 />
               </div>
 
-              <div className="form-group">
+              <div className="form-group full-width">
                 <label htmlFor="message">Message *</label>
                 <textarea
                   id="message"
@@ -145,8 +145,8 @@ const ContactUs = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  rows="5"
-                  placeholder="Tell us more about your inquiry..."
+                  rows="4"
+                  placeholder="Tell us about your project requirements..."
                 ></textarea>
               </div>
 

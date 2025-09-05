@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => (
   <>
@@ -21,9 +22,9 @@ const Footer = () => (
             <div className="footer-col-title">Home</div>
             <a href="#about">About Us</a>
             <a href="#products">Products</a>
-            <a href="#clients">Clients</a>
+            <Link to="/contact">Contact Us</Link>
           </div>
-          <div className="footer-col">
+          {/* <div className="footer-col">
             <div className="footer-col-title">Resources</div>
             <a href="#contact">Contact Us</a>
             <a href="#faq">FAQ</a>
@@ -33,7 +34,7 @@ const Footer = () => (
             <div className="footer-col-title">Legal</div>
             <a href="#privacy">Privacy Policy</a>
             <a href="#terms">Terms & Conditions</a>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="footer-bottom">

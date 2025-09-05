@@ -6,6 +6,7 @@
   min-height: 100vh;
   position: relative;
   z-index: 1;
+  max-height: 100vh;
 }
 .hero-section {
   margin-top: 90px;
