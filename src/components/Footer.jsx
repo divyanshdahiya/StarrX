@@ -22,6 +22,7 @@ const Footer = () => (
             <div className="footer-col-title">Quick Links</div>
             <Link to="/">Home</Link>
             <Link to="/about">About Us</Link>
+            <Link to="/accomplishments">Accomplishments</Link>
             <Link to="/contact">Contact Us</Link>
           </div>
           <div className="footer-col">

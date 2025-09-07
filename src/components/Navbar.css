@@ -23,7 +23,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 60px;
+  padding: 8px 60px;
 }
 
 /* Right section: nav links + contact button */
@@ -61,7 +61,7 @@
 .nav-link {
   color: #ffffff;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
   padding: 8px 0;
   transition: all 0.3s ease;
@@ -97,7 +97,7 @@
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 4px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 500;
   transition: all 0.3s ease;
   display: inline-block;
@@ -159,6 +159,6 @@
 
 @media (min-width: 1400px) {
   .navbar-container {
-    padding: 18px 80px;
+    padding: 8px 80px;
   }
 }
