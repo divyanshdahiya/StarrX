@@ -3,10 +3,9 @@
   background: #161616 url("../assets/bullseye-gradient.svg") center top/cover
     no-repeat;
   width: 100%;
-  min-height: 100vh;
   position: relative;
   z-index: 1;
-  max-height: 100vh;
+  padding-bottom: 50px;
 }
 .hero-section {
   margin-top: 90px;

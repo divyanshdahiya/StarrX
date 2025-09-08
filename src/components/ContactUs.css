@@ -1,6 +1,6 @@
 .contact-us {
-  min-height: 100vh;
-  padding: 150px 0 0 0;
+  min-height: 80vh;
+  padding: 150px 0 100px 0;
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
   position: relative;
 }
